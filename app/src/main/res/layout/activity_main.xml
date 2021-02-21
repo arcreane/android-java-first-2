@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -24,7 +25,8 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Play"
+        android:text="play"
+        android:onClick="sudoku"
         android:textSize="64sp"
         android:layout_centerInParent="true"
         android:textColor="#1e81b0"
@@ -47,12 +49,5 @@
         android:layout_margin="16dp"
         android:id="@+id/volumeCtrl"
         android:src="@drawable/ic_baseline_volume_up_24"/>
-
-    <view
-        android:id="@+id/view4"
-        class="com.example.lappdance.GridView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
 
 </RelativeLayout>
